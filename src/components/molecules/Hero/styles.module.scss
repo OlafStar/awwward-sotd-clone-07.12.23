@@ -13,19 +13,53 @@
     mask-position: 50% 50%;
     mask-size: 50vw;
   }
-  100% {
+  99% {
     mask-position: 50% 50%;
     mask-size: 110vw;
+  }
+  100% {
+    mask-position: 50% 50%;
+    mask-size: 1000vw;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  @keyframes maskAnimation {
+    0% {
+      mask-position: 50% 100vh;
+      mask-size: 30vh;
+    }
+    25% {
+      mask-position: 50% 100vh;
+    }
+    30% {
+      mask-position: 50% 100vh;
+    }
+    70% {
+      mask-position: 50% 50%;
+      mask-size: 30vh;
+    }
+    99% {
+      mask-position: 50% 50%;
+      mask-size: 110vh;
+    }
+    100% {
+      mask-position: 50% 50%;
+      mask-size: 1000vh;
+    }
   }
 }
 
 .maskAnimation {
   mask-image: url("../../../../public/mask.svg");
   mask-repeat: no-repeat;
-  mask-size: 70vw;
   mask-position: 50% 50%;
   background: white;
   position: absolute;
   color: black;
   animation: maskAnimation 3s forwards;
+
+  @media screen and (orientation: portrait) {
+    mask-image: url("../../../../public/mask-portrait.svg");
+  }
 }

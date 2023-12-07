@@ -1,9 +1,11 @@
 import Hero from "~/components/molecules/Hero";
+import SolutionsSection from "~/components/molecules/SolutionsSection";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Hero />
+      <SolutionsSection />
     </div>
   );
 };

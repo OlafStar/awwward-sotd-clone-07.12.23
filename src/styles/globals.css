@@ -17,11 +17,11 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #fff;
+  color: #000;
+  font-family: var(--font-aeonik);
+  font-size: 20px;
+  font-size: max(12px, min(20px, 2rem));
+  font-weight: 500;
+  line-height: 1.35;
 }
